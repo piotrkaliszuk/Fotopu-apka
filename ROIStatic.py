@@ -43,7 +43,7 @@ def wykrywacz_ruchu_statyczny():
         dt = now.strftime("%m/%d/%Y %H:%M:%S")
         cv2.putText(frame, "{}".format(dt), (10, 20),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 255), 2)
-        img = f"SKW{format}.png"
+        img = f"Praktyki{format}.png"
         print(f'Zapisano zrzut ekranu: {img}')
         cv2.imwrite(os.path.join(path, img), frame)
         print(f'Zapisano {img_counter} zrzut!')
